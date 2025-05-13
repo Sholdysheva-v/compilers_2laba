@@ -9,6 +9,28 @@
 Добавлен класс LexicalAnalyzer - основной класс, реализующий логику лексического анализа. 
 Поддерживается разбор: чисел, идентификаторов, ключевых слов, операторов, строковых литералов. Выделение позиций токенов в исходном тексте. Обработка ошибок (недопустимые символы).
 
+Вариант задания: Объявление и определение структуры на языке PHP:
+
+struct Employee{
+    string $firstName;
+    string $lastName;
+    int $salary;
+    bool $fullTime;
+};
+
+Примеры допустимых строк: 
+
+struct Person {
+    string $name;
+    int $age;
+};
+
+struct Product {
+    string $title;
+    double $price;
+    bool $inStock;
+};
+
 Лексический анализатор реализует следующую диаграмму состояний:
 
 1. Начальное состояние
@@ -21,6 +43,13 @@
 8. Распознавание специальных символов ({, }, ;)
 9. Обработка ошибок (недопустимые символы)
 
-![Диаграмма_состояний](https://github.com/user-attachments/assets/be2bbfcf-1847-4b8a-b89f-028cf83aaf08
+![Диаграмма_состояний](https://github.com/user-attachments/assets/be2bbfcf-1847-4b8a-b89f-028cf83aaf08)
+
+Тестовые примеры:
+
+![image](https://github.com/user-attachments/assets/f125433c-d2be-40f6-9290-1367d0cebd17)
+
+![image](https://github.com/user-attachments/assets/44408238-82ea-485f-832e-4ff808b6aff5)
+
 
 
